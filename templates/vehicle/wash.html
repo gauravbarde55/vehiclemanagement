@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WASHING</title>
+</head>
+<style>
+    /* globally specified */
+    html,body{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* background image */
+.header{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/Car-Washing.jpg' %}");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+width:100%;
+height:200vh;
+font-family:'Roboto';
+font-weight:400;
+}
+.navigation
+{
+background-color:rgb(255, 255, 255);
+
+}
+.navigation > .container
+{
+max-width:100%;
+margin:auto;
+
+}
+.navigation .navbar
+{
+position:relative;
+
+}
+/* logo ka deign */
+.navigation .navbar .logo-toggle-container
+{
+position:absolute;
+left:50%;
+top:14px;
+transform:translateX(-50%);
+}
+.navigation .navbar .logo-toggle-container a
+{
+display:block;
+}
+.navigation .navbar .logo-toggle-container a img
+{
+width:120px;
+}
+.navigation .menu
+{
+text-align:right;
+}
+@media screen and (min-width:1024px)
+{
+.navigation .menu
+{
+display:block !important;
+height: 100px  !important;
+margin-top: auto;
+}
+}
+.navigation .menu li
+{
+display:inline-block;
+padding:33px 7px;
+}
+.navigation .menu li a
+{
+display:block;
+padding:8px 15px;
+text-decoration:none;
+font-weight:600;
+letter-spacing:1px;
+color:#333;
+font-size:16px;
+}
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3)
+{
+float:left;
+}
+.navigation .menu li:hover a
+{
+background-color:blue;
+color:#fff;
+}
+@media screen and (max-width:767px)
+{	
+.navigation .navbar .logo-toggle-container
+{
+position:static;
+transform:translateX(0%);
+}
+.navigation .navbar .logo-toggle-container a
+{
+width:80%;
+}
+.navigation .navbar .logo-toggle-container .toggle-box
+{
+position:absolute;
+right:10px;
+top:30px;
+display:block;
+width:30px;
+background:#000;
+padding:15px 9px;
+cursor:pointer;
+border-radius:5px;
+}
+.navigation .navbar .logo-toggle-container .toggle-box span
+{
+display:block;
+max-width:90%;
+margin:auto;
+height:px;
+background-color:rgb(255, 255, 255);
+margin-bottom:4px;
+}
+.navigation .navbar .logo-toggle-container .toggle-box span:last-child
+{
+margin-bottom:0;
+}
+.navigation .menu
+{
+text-align:center;
+display:none;
+}
+.navigation .menu li
+{
+display:block;
+float:none !important;
+padding:0 10px;
+border-bottom:1px solid #ccc;
+}
+}
+
+.box {
+    padding-left: 20%;
+    padding-top: 1%;
+    width: 800px;
+    height: 700px;
+    
+}
+.disc{
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: azure;
+    opacity: 70%;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.heading{
+    top: 20%;
+    left:50%;
+    text-shadow: 1px 1px black;
+    font-size: 259%;
+    text-align: center;
+
+}
+.price{
+    padding-left: 66%;
+}
+.box{
+    padding-left: 32%;
+    padding-top: 0%;
+    width: 600px;
+    height: 700px;
+    
+}
+.disc{
+    padding: 18px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: azure;
+    opacity: 70%;
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+    
+
+}
+.heading{
+    padding-left: 8%;
+    padding-top: 2%;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    font-family: 'Lobster', cursive;
+    font-size: 259%;
+
+}
+
+</style>
+
+<body>
+        <section class="header">
+          <div class="navigation">
+             <div class="container">
+                <div class="navbar">
+                   <div class="logo-toggle-container">
+                      <a href="/">
+                      <img src="{%static 'images/cliniclogo.jpg' %}" alt="" />
+                      </a>
+                      <span class="toggle-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      </span>
+                   </div>
+                   <ul class="menu">
+                   </ul>
+                </div>
+             </div>
+          </div>
+          <h1 class="heading" style="color:rgb(255, 255, 255);">CAR WASH SERVICE</h1>
+
+          <div class ="box">
+          <p class="disc"> 
+  
+              Your tyres are all there is between you and the open road. We will look after them, so they will look after you.
+              
+              High quality, good condition tyres are an important safety mechanism. They are the first point in the braking system of your car and have the important role of keeping your car gripped to the road. Equally as important is aligned and balanced wheels to make your car a pleasure to drive.
+              
+              If you are experiencing vibration or poor handling while driving, have problems keeping tyres inflated, have low tyre tread or can see obvious damage to your tyres, it is time to get them checked.
+              
+              Regular servicing will keep tabs on your tyre condition and is also a good opportunity to have wheel alignments and wheel balances performed. They are relatively low cost and can greatly improve your driving experience. 
+              
+              New tyres, a wheel alignment and wheel balance go hand in hand to ensure good handling. Repco Authorised Service are experienced at maintaining tyres and related components and can give you good advice on purchasing the correct tyres for your car.
+              
+              Need new tyres, a wheel balance or wheel alignment? It is time to visit your local Repco Authorised Service to get your wheels in prime condition. Book a service today.
+              
+               
+              
+              Trust, knowledge and expertise
+              
+              Repco Authorised Service is one of the best known names in car servicing and repairs Australia wide. We are independently owned and operated and known locally for our honest service, years of experience and knowledge. We have all the best tyres and latest equipment to perform your tyre fitting or wheel alignment and balance. All our work is backed by a nationwide warranty honored at over 500 Service centres across Australia. Find your local service centre or book now.
+              
+               
+              
+              Tyre and wheel servicing - everything you needed to know and more
+              
+              Get Your Bearings Right
+              
+              If you want to keep your motor running without heat or friction developing you really need to get your bearings right.
+              
+              Like all moving parts on a car, wheel bearings are subject to significant wear and tear. So, what are wheel bearings and why are they important?  See our AutoFacts Video and get your bearings.
+  
+          
+          
+          </p>
+  
+      </div>
+        
+</section>
+
+</body>
+</html>

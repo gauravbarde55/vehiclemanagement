@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>contactus</title>
+</head>
+<style>
+    /* globally specified */
+    html,body{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* background image */
+.header{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+width:100%;
+height:100vh;
+font-family:'Roboto';
+font-weight:400;
+}
+.navigation
+{
+background-color:rgb(255, 255, 255);
+
+}
+.navigation > .container
+{
+max-width:100%;
+margin:auto;
+
+}
+.navigation .navbar
+{
+position:relative;
+
+}
+/* logo ka deign */
+.navigation .navbar .logo-toggle-container
+{
+position:absolute;
+left:50%;
+top:14px;
+transform:translateX(-50%);
+}
+.navigation .navbar .logo-toggle-container a
+{
+display:block;
+}
+.navigation .navbar .logo-toggle-container a img
+{
+width:120px;
+}
+.navigation .menu
+{
+text-align:right;
+}
+@media screen and (min-width:1024px)
+{
+.navigation .menu
+{
+display:block !important;
+height: 100px  !important;
+margin-top: auto;
+}
+}
+.navigation .menu li
+{
+display:inline-block;
+padding:33px 7px;
+}
+.navigation .menu li a
+{
+display:block;
+padding:8px 15px;
+text-decoration:none;
+font-weight:600;
+letter-spacing:1px;
+color:#333;
+font-size:16px;
+}
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3)
+{
+float:left;
+}
+.navigation .menu li:hover a
+{
+background-color:blue;
+color:#fff;
+}
+@media screen and (max-width:767px)
+{	
+.navigation .navbar .logo-toggle-container
+{
+position:static;
+transform:translateX(0%);
+}
+.navigation .navbar .logo-toggle-container a
+{
+width:80%;
+}
+.navigation .navbar .logo-toggle-container .toggle-box
+{
+position:absolute;
+right:10px;
+top:30px;
+display:block;
+width:30px;
+background:#000;
+padding:15px 9px;
+cursor:pointer;
+border-radius:5px;
+}
+.navigation .navbar .logo-toggle-container .toggle-box span
+{
+display:block;
+max-width:90%;
+margin:auto;
+height:px;
+background-color:rgb(255, 255, 255);
+margin-bottom:4px;
+}
+.navigation .navbar .logo-toggle-container .toggle-box span:last-child
+{
+margin-bottom:0;
+}
+.navigation .menu
+{
+text-align:center;
+display:none;
+}
+.navigation .menu li
+{
+display:block;
+float:none !important;
+padding:0 10px;
+border-bottom:1px solid #ccc;
+}
+}
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  text-shadow: #000;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: rgb(37, 33, 243);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  padding-top: 10%;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+.form-control, 
+textarea {
+  max-width: 400px;
+  background-color: #000;
+  color: rgb(14, 12, 12);
+  letter-spacing: 1px;
+}
+
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: rgb(10, 10, 10);
+}
+
+.place {
+  margin-left: 62px;
+  color: rgb(10, 10, 10);
+}
+
+.phone {
+  margin-left: 56px;
+  color: rgb(10, 10, 10);
+}
+
+.gmail {
+  margin-left: 53px;
+  color: rgb(10, 10, 10);
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: black;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+
+
+
+
+</style>
+
+<body>
+  {% include "vehicle/navbar.html" %}
+<section>
+<!-- partial:index.partial.html -->
+
+  
+    <h1 class="section-header">Contact-Us</h1>
+    
+    <div class="contact-wrapper">
+    
+    
+    <!-- Left contact page --> 
+      
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">JALGAON, MAHARASHTRA</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="" title="Give me a call">9876543210</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">thecarclinic@gmail.com</a></span></i></li>
+            
+          </ul>
+  
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+
+        </ul>
+        <hr>
+  
+          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+  
+        </div>
+      
+    </div>
+
+  <!-- partial -->
+
+        </section>
+            <script>
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });</script>
+  </body>
+  </html>

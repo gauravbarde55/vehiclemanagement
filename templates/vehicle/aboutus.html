@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ABOUT US</title>
+</head>
+<style>
+    /* globally specified */
+    html,body{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* background image */
+.header{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+width:100%;
+height:100vh;
+font-family:'Roboto';
+font-weight:400;
+}
+
+.content{
+    background-color: #1d2c57;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0  12px 12px 0;
+    color: #fff;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+    padding-top:10%;
+
+}
+.content span{
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+    color:#ffffff
+}
+
+
+/*****************/
+
+@media(max-width: 900px){
+    section{
+        grid-template-columns: 1fr;
+        width: 100%;
+        border-radius: none;
+    }
+    .image{
+        height: 100vh;
+        border-radius: none;
+    }
+    .content{
+        height: 160vh;
+        border-radius: none;
+    }
+    .content h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .content span{
+        margin: 20px 0;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .links li a{
+        font-size: 14px;
+    }
+    .links{
+        margin: 5px 0;
+    }
+    .links li{
+        padding: 6px 10px;
+    }
+    .icons li i{
+        font-size: 15px;
+    }
+}
+
+
+
+</style>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+
+
+            <div class = "content">
+                <h2>About Us</h2>
+                <span><!-- line here --></span>
+                <p>
+                    Opulence, sheer comfort and an incredible driving experience, luxury cars are the epitome of these qualities.These impeccably stylish cars are a redefine status symbol. However, luxury cars can quickly become a money pit, especially when it comes their annual service or repairs. The Car Clinic is a niche service that caters to all luxury car owners by offering repair and maintenance service at a fraction of a cost.<br><br>
+
+                    Benefits of The Car Clinic:-<br>
+
+                    1. Car Service booking at a click of the button.<br>
+
+                    2. Free pick & drop of luxury cars.<br>
+
+                    3. Legitimate spare Parts.<br>
+
+                    4. Certified mechanics with extensive experience in luxury car repair.<br>
+
+                    5. Quick turnaround time.<br>
+
+                    6. Comparatively lower costs.<br>
+
+                    7. Car Service as easy as CLICK – PICK – READY.<br>
+
+                    We have devised a systematic approach that allows interactive applications to bring forth solutions from our certified car experts. The Car Clinic houses an array of car technicians and Luxury Car Accessories In Mumbai. Our technical experts can pick up your luxury car, diagnose the problem, fix the issue and drop your car at your preferred location. It really is that easy!</p><br><br>
+
+            </div>
+
+  {% include "vehicle/footer.html" %}
+  </body>
+  </html>

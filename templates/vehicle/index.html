@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <style media="screen">
+  .text-box{
+    width:90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+
+}
+
+.text-box h1{
+    font-size: 65px;
+
+
+}
+
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('{% static "images/bg4.jpg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:100vh;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: blue;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.row1{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+.row2{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+.row3{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+.see_btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 2px 5px;
+    font-size: 15px;
+    background-color: rgb(253, 253, 253);
+    position: relative;
+    cursor: pointer;
+
+}
+
+.col1{
+    flex-basis: 31%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/periodic.jpg'%}");
+    background-size: 400px 280px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col1:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 17, 255);
+}
+
+.col2{
+    flex-basis: 31%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/tyre.jpg'%}");
+    background-size: 400px 280px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col2:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 17, 255);
+}
+.col3{
+    flex-basis: 31%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/lightsfitments.jpg'%}");
+    background-size: 500px 280px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col3:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 17, 255);
+}
+.col4{
+    flex-basis: 31%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/Car-Washing.jpg'%}");
+    background-size: 400px 280px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col4:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 17, 255);
+}
+.col5{
+    flex-basis: 31%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/glass.jpg'%}");
+    background-size: 400px 280px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col5:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 17, 255);
+}
+.col6{
+    flex-basis: 31%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/ac.jpg'%}");
+    background-size: 400px 280px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col6:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 17, 255);
+}
+.col7{
+    flex-basis: 31%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/denting.jpg'%}");
+    background-size: 400px 280px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col7:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 17, 255);
+}
+.col8{
+    flex-basis: 31%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("{% static 'images/customization.jpg'%}");
+    background-size: 400px 280px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col8:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 17, 255);
+}
+.col9{
+    flex-basis: 31%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/access.jpg'%}");
+    background-size: 350px 280px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col9:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 17, 255);
+}
+/* see how it is done ka heading */
+.videos{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: blue;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+/* row and colunm design */
+.video_row{
+    display: flex;
+    align-items: center;
+    flex-wrap: inherit;
+}
+.col-vid1{
+    flex-basis: 60%;
+    min-width: 500px;
+}
+.image{
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+}
+
+
+.col-vid2{
+    flex-basis: 60%;
+    min-width: 500px;
+}
+.image1{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+}
+.oye{
+padding-left:29%;
+top:50%;
+left:90%;
+}
+  </style>
+
+</head>
+
+<body>
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <section >
+
+`<div class="text-box">
+
+
+     <h1>𝐓𝐇𝐄 𝐂𝐀𝐑 𝐂𝐋𝐈𝐍𝐈𝐂</h1>
+      <p><div class="oye"><b>Repair Done Right</b></div></p>
+  </div>
+        </section>
+
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+
+  <br><br>
+
+  {% include "vehicle/customer_mechanic_cards.html" %}
+<br><br><br><br><br>
+        <section class = "services">
+          <h1><u>𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒 𝐖𝐄 𝐎𝐅𝐅𝐄𝐑</u></h1><br><br>
+
+        <!-- align services in a row -->
+          <div class="row1">
+
+           <div class="col1">
+
+                <h3><u>Periodic Service</u></h3>
+                <p> Wear and tear in your vehicle
+            is unavoidable, and it would usually have a
+            finite life span before eventually being reti
+            -red from operations. The good news is,
+            your vehicle doesnt just go end-of-life over
+            night ....</p><br><br>
+                <br><a href="/periodic.html" style="text-decoration: none"><div class="see_btn">see more...</div></a>
+
+            </div>
+            <div class="col2">
+                <h3><u>Tyre Service</u></h3>
+                <p>Your tyres are all there is between you and the open road. We will look after them, so they will look after you.
+                    High quality, good condition tyres are an important safety mechanism They are the first point in the braking system of your car and have the ....</p><br>
+                <br><a href="/tyre.html" style="text-decoration: none"><div class="see_btn">see more...</div></a>
+            </div>
+            <div class="col3">
+                <h3><u>Light And Fitments</u></h3>
+                <p> Fitments and light configurations primarily deal with the different lights of the car like the front and back headlights, fog lights, turning indicators etc. Fitments include bumper configurations(front and back)and the grills of the car(if any)....</p><br>
+                <br><a href="/light.html" style="text-decoration: none"><div class="see_btn">see more...</div></a>
+            </div>
+        </div>
+        <div class="row2">
+
+            <div class="col4">
+                <h3><u>Car Wash</u></h3>
+                <p>Your tyres are all there is between you and the open road. We will look after them, so they will look after you.
+                    High quality, good condition tyres are an important safety mechanism. They are the first point in the braking system of your car and have the....</p><br>
+                <br><a href="/wash.html" style="text-decoration: none"><div class="see_btn">see more...</div></a>
+            </div>
+
+            <div class="col5">
+                <h3><u>Glass Replacements</u></h3>
+                <p>Advancements in windscreen manufacturing have made windshield more and more secure. So even if your car meets with an accident, your car’s front glass will not collapse being a laminated car glass....</p><br><br>
+                <br><a href="/glass.html" style="text-decoration: none"><div class="see_btn">see more...</div></a><br>
+            </div>
+
+            <div class="col6">
+                <h3><u>AC Service</u></h3>
+                <p>Using a pressure gauge and a precision AC gas recharging machine,they flush
+the refrigerant out and tops it up to the recommended level. While working on
+this, they also check if there is any possible leak or crack in the AC line and hoses....</p><br>
+                <br><a href="/ac.html" style="text-decoration: none"><div class="see_btn" color="blue">see more...</div></a>
+            </div>
+        </div>
+        <div class="row3">
+
+            <div class="col7">
+                <h3><u>Denting And Painting</u></h3>
+                <p>Denting and Painting is of two components:- One is removing dents, scratches on the vehicle external body are removed and re-made to look like how it looks before deformation. Second is painting the body with the nearest matching paint....</p><br>
+                <br><a href="/denting.html" style="text-decoration: none"><div class="see_btn">see more...</div></a>
+            </div>
+
+            <div class="col8">
+                <h3><u>Customization</u></h3>
+                <p>Everyone who has a car, truck or SUV will need to have some type of auto accessories to help keep it running in top performance. Then there are the auto accessories that you can use inside your vehicle to help make you more comfortable and to help take care of your vehicle...</p>
+                <br><a href="/custom.html" style="text-decoration: none"><div class="see_btn">see more...</div></a>
+            </div>
+
+            <div class="col9">
+                <h3><u>Car Accessories</u></h3>
+                <p> Everyone who has a car, truck or SUV will need to have some type of auto accessories to help keep it running in top performance. Then there are the auto accessories that you can use inside your vehicle to help make you more comfortable....</p><br>
+                <br><a href="/caracc.html" style="text-decoration: none"><div class="see_btn">see more...</div></a>
+            </div>
+        </div>
+      </section>
+      <!-- ------see how it is done-------- -->
+      <section class="videos">
+          <h1><u>𝐒𝐞𝐞 𝐇𝐨𝐰 𝐈𝐭 𝐈𝐬 𝐃𝐨𝐧𝐞</u></h1><br><br>
+          <div class="video_row">
+              <div class="col-vid1">
+                  <div class="image">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1vjrfaB7iSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+              </div>
+              <div class="col-vid2">
+                <div class="image1">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KL_nsjG1TUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+            </div>
+          </div>
+
+
+</section>
+
+
+
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>

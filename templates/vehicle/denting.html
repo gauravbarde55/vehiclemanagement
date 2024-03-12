@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>DENTING AND PAINTING</title>
+</head>
+<style>
+    /* globally specified */
+    html,body{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* background image */
+.header{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'images/denting.jpg' %}");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+width:100%;
+height:190vh;
+font-family:'Roboto';
+font-weight:400;
+}
+.navigation
+{
+background-color:rgb(255, 255, 255);
+
+}
+.navigation > .container
+{
+max-width:100%;
+margin:auto;
+
+}
+.navigation .navbar
+{
+position:relative;
+
+}
+/* logo ka deign */
+.navigation .navbar .logo-toggle-container
+{
+position:absolute;
+left:50%;
+top:14px;
+transform:translateX(-50%);
+}
+.navigation .navbar .logo-toggle-container a
+{
+display:block;
+}
+.navigation .navbar .logo-toggle-container a img
+{
+width:120px;
+}
+.navigation .menu
+{
+text-align:right;
+}
+@media screen and (min-width:1024px)
+{
+.navigation .menu
+{
+display:block !important;
+height: 100px  !important;
+margin-top: auto;
+}
+}
+.navigation .menu li
+{
+display:inline-block;
+padding:33px 7px;
+}
+.navigation .menu li a
+{
+display:block;
+padding:8px 15px;
+text-decoration:none;
+font-weight:600;
+letter-spacing:1px;
+color:#333;
+font-size:16px;
+}
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3)
+{
+float:left;
+}
+.navigation .menu li:hover a
+{
+background-color:blue;
+color:#fff;
+}
+@media screen and (max-width:767px)
+{	
+.navigation .navbar .logo-toggle-container
+{
+position:static;
+transform:translateX(0%);
+}
+.navigation .navbar .logo-toggle-container a
+{
+width:80%;
+}
+.navigation .navbar .logo-toggle-container .toggle-box
+{
+position:absolute;
+right:10px;
+top:30px;
+display:block;
+width:30px;
+background:#000;
+padding:15px 9px;
+cursor:pointer;
+border-radius:5px;
+}
+.navigation .navbar .logo-toggle-container .toggle-box span
+{
+display:block;
+max-width:90%;
+margin:auto;
+height:px;
+background-color:rgb(255, 255, 255);
+margin-bottom:4px;
+}
+.navigation .navbar .logo-toggle-container .toggle-box span:last-child
+{
+margin-bottom:0;
+}
+.navigation .menu
+{
+text-align:center;
+display:none;
+}
+.navigation .menu li
+{
+display:block;
+float:none !important;
+padding:0 10px;
+border-bottom:1px solid #ccc;
+}
+}
+
+.box {
+    padding-left: 20%;
+    padding-top: 1%;
+    width: 800px;
+    height: 700px;
+    
+}
+.disc{
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: azure;
+    opacity: 70%;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.heading{
+    top: 20%;
+    left:50%;
+    text-shadow: 2px 2px black;
+    font-size: 259%;
+    text-align: center;
+
+}
+.price{
+    padding-left: 66%;
+}
+.box{
+    padding-left: 32%;
+    padding-top: 0%;
+    width: 600px;
+    height: 700px;
+    
+}
+.disc{
+    padding: 18px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: azure;
+    opacity: 70%;
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+    
+
+}
+.heading{
+    padding-left: 8%;
+    padding-top: 2%;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    font-family: 'Lobster', cursive;
+    font-size: 259%;
+
+}
+.box{
+    padding-left: 32%;
+    padding-top: 0%;
+    width: 600px;
+    height: 700px;
+    
+}
+.disc{
+    padding: 18px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: azure;
+    opacity: 70%;
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+    
+
+}
+.heading{
+    padding-left: 8%;
+    padding-top: 2%;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    font-family: 'Lobster', cursive;
+    font-size: 259%;
+
+}
+
+
+</style>
+
+<body>
+        <section class="header">
+          <div class="navigation">
+             <div class="container">
+                <div class="navbar">
+                   <div class="logo-toggle-container">
+                      <a href="/">
+                      <img src="{%static 'images/cliniclogo.jpg' %}" alt="" />
+                      </a>
+                      <span class="toggle-box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      </span>
+                   </div>
+                   <ul class="menu">
+                   </ul>
+                </div>
+             </div>
+          </div>
+          <h1 class="heading" style="color:rgb(255, 255, 255);"><u>DENTING AND PAINTING SERVICE</u></h1>
+
+          <div class ="box">
+          <p class="disc"> 
+  
+              Denting and Painting is of two components:- One is removing dents, scratches on the vehicle external body are removed and re-made to look like how it looks before deformation. Second is painting the body with the nearest matching paint. To make you understand furthermore the process below steps are followed.<br><br>
+  
+              In the next step wherever there is a scratch or paint is deformed, that area is scrubbed with a wax (called coat application in technical terms) is applied on the area.
+              In the next step after making the dent into the original shape, matched paint is applied on the area or whole panel depending up on the length of the scratch or dent.
+              
+              In the last step they do rubbing and buffing on the panel which it is painted. This helps in smoothing the surface of the body.<br><br>
+              
+              Types Of Packages In Denting And Painting
+              A car is divided into panels, based on the length of the vehicle number of panels change.<br><br>
+              
+              <b>Per Panel Package Per Panel Package</b><br>
+              This package will take the process which is explained above step by step for only one panel. The package inclusions are as mentioned below:-<br>
+              
+              1. Body Coat Application<br>
+              2. Clear Coat Application<br>
+              3. Painting<br>
+              3. Rubbing & Buffing<br><br>
+              <b>Full Body Package Full Body Package</b><br>
+              This package includes denting and painting service for the whole externa body of the car. The process would be same as it is mentioned for per panel package, and the package inclusions are same as per panel package.<br><br>
+              
+              
+          </p>
+  
+      </div>
+        
+</section>
+
+</body>
+</html>
